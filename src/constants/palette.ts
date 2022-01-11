@@ -93,22 +93,21 @@ const PALETTE = {
     900: '#18181B',
   },
 
-  OPACITY_GRAY: 'rgba(212, 212, 216, 0.3)',
-  OPACITY_BLACK: {
-    50: 'rgba(0, 0, 0, 0.05)',
-    100: 'rgba(0, 0, 0, 0.1)',
-    200: 'rgba(0, 0, 0, 0.2)',
-    300: 'rgba(0, 0, 0, 0.3)',
-    400: 'rgba(0, 0, 0, 0.4)',
-    500: 'rgba(0, 0, 0, 0.5)',
-    600: 'rgba(0, 0, 0, 0.6)',
-    700: 'rgba(0, 0, 0, 0.7)',
-    800: 'rgba(0, 0, 0, 0.8)',
-    900: 'rgba(0, 0, 0, 0.9)',
-  },
   WHITE: '#fff',
-
-  GITHUB: '#24292F',
 };
 
 export default PALETTE;
+
+const useColor = {
+  aa: '#c1c7cd',
+  bb: '#4394f0',
+  cc: '#697077',
+  dd: '#878d9d',
+  ee: '#f8f8f8',
+  ff: '#478dff',
+  gg: '#2b7cfe',
+  hh: '#1b64da',
+  ii: '#DDE1E1',
+  jj: '#66a8f3',
+  kk: '#dde1e6',
+};

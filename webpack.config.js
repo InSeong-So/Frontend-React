@@ -53,10 +53,6 @@ module.exports = () => {
             'url-loader',
           ],
         },
-        {
-          test: /\.(png|jpg)$/,
-          type: 'asset/resource',
-        },
       ],
     },
     optimization: {
@@ -67,6 +63,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: 'public/index.html',
+        favicon: 'favicon.ico',
       }),
       new BundleAnalyzerPlugin({
         analyzerMode: 'server',
