@@ -2,10 +2,11 @@
   "env": {
     "browser": true,
     "es2021": true,
-    "jest": true,
     "node": true // "module" is not defined. 에러가 발생하면 기입
   },
-  "ignorePatterns": ["*.js"],
+  "ignorePatterns": [
+    "*.js"
+  ],
   "extends": [
     "react-app",
     "react-app/jest",
@@ -23,8 +24,14 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["prettier"],
+  "plugins": [
+    "prettier"
+  ],
   "rules": {
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/no-unsafe-return": "off",
     "prettier/prettier": [
       "error",
       {
@@ -38,8 +45,6 @@
         "arrowParens": "avoid",
         "endOfLine": "auto"
       }
-    ],
-    "react/react-in-jsx-scope": "off",
-    "@typescript-eslint/no-floating-promises": "off"
+    ]
   }
 }

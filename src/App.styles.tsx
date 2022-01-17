@@ -2,18 +2,18 @@ import { Global, css } from '@emotion/react';
 import PALETTE from './constants/palette';
 
 export const theme = {
-  primary: PALETTE.ORANGE,
-  red: PALETTE.RED,
-  orange: PALETTE.ORANGE,
-  yellow: PALETTE.YELLOW,
-  green: PALETTE.GREEN,
-  blue: PALETTE.BLUE,
-  purple: PALETTE.PURPLE,
-  black: PALETTE.BLACK,
-  gray: PALETTE.GRAY,
-  white: PALETTE.WHITE,
-  modalOverlay: PALETTE.OPACITY_BLACK[400],
-  shadow: PALETTE.OPACITY_BLACK[200],
+  primary: PALETTE.orange,
+  red: PALETTE.red,
+  orange: PALETTE.orange,
+  yellow: PALETTE.yellow,
+  green: PALETTE.green,
+  blue: PALETTE.blue,
+  purple: PALETTE.purple,
+  black: PALETTE.black,
+  gray: PALETTE.gray,
+  white: PALETTE.white,
+  modalOverlay: PALETTE.black[1],
+  shadow: PALETTE.white[1],
   breakpoints: {
     sm: 576,
     md: 768,
@@ -151,7 +151,7 @@ const reset = css`
 
   body {
     font-family: 'Noto Sans KR', sans-serif;
-    color: ${theme.black[400]};
+    color: ${theme.black[2]};
   }
 
   input,
